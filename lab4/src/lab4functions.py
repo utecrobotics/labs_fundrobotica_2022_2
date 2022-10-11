@@ -42,7 +42,7 @@ def jacobian_ur5(q, delta=0.0001):
     """
     # Crear una matriz 3x6
     J = np.zeros((3,6))
-    # Transformacion homogenea inicial (usando q)
+    # Transformacion homogenea inicial (usando q), la función de transformacion homogenea fue definida en el lab3
 
     
     # Iteracion para la derivada de cada columna
@@ -53,7 +53,7 @@ def jacobian_ur5(q, delta=0.0001):
 
         # Transformacion homogenea luego del incremento (q+delta)
 
-        # Aproximacion del Jacobiano de posicion usando diferencias finitas
+        # Aproximacion del Jacobiano de posicion usando diferencias finitas, para la articulación i-esima
 
     return J
 
