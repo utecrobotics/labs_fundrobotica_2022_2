@@ -42,7 +42,7 @@ def jacobian_ur5(q, delta=0.0001):
     """
     # Crear una matriz 3x6
     J = np.zeros((3,6))
-    # Transformacion homogenea inicial (usando q), la función de transformacion homogenea fue definida en el lab3
+    # Utilizar la funcion que calcula la cinematica directa, para encontrar x,y,z usando q
 
     
     # Iteracion para la derivada de cada columna
