@@ -14,10 +14,10 @@ pub = rospy.Publisher('joint_states', JointState, queue_size=1000)
 bmarker_actual  = BallMarker(color['RED'])
 bmarker_deseado = BallMarker(color['GREEN'])
 # Archivos donde se almacenara los datos
-fqact = open("/tmp/qactual.dat", "w")
-fqdes = open("/tmp/qdeseado.dat", "w")
-fxact = open("/tmp/xactual.dat", "w")
-fxdes = open("/tmp/xdeseado.dat", "w")
+fqact = open("/tmp/qactual.txt", "w")
+fqdes = open("/tmp/qdeseado.txt", "w")
+fxact = open("/tmp/xactual.txt", "w")
+fxdes = open("/tmp/xdeseado.txt", "w")
 
 # Nombres de las articulaciones
 jnames = ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint',
