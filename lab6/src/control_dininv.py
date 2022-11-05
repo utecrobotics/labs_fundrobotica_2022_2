@@ -66,7 +66,7 @@ robot = Robot(q, dq, ndof, dt)
 t = 0.0
 
 # Se definen las ganancias del controlador
-valores = 0.1*np.array([1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
+valores = 0.1*np.array([1.0, 1.0, 1.0])
 Kp = np.diag(valores)
 Kd = 2*np.sqrt(Kp)
 
